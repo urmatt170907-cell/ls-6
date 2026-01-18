@@ -1,0 +1,37 @@
+.detailed-wrapper {
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.back-link {
+    cursor: pointer;
+    background: none;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.back-link:hover {
+    background-color: #f0f7ff;
+}
+
+.content-box {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fafafa;
+}
+
+.content-box h1 {
+    color: #222;
+}
+
+.content-box p {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+}

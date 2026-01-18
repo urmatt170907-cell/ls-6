@@ -1,19 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import LoadDocs from "./components/LoadDocs/LoadDocs.jsx";
-import Counter from "./components/Counter/Counter.jsx";
+import { Routes, Route } from "react-router-dom";
+import MainListPage from "./pages/MainListPage/MainListPage";
+import DetailedPage from "./pages/DetailedPage/DetailedPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-        <LoadDocs/>
-        <Counter/>
-    </>
-  )
+    return (
+        <Routes>
+            <Route path="/" element={<MainListPage />} />
+            <Route path="/detailed/:id" element={<DetailedPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+    );
 }
 
-export default App
+export default App;
